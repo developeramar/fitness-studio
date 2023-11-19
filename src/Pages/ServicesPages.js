@@ -1,8 +1,15 @@
 import React from 'react'
+import NavBar from '../Components/NavBar'
+import Service from '../Components/Service'
+import Footer from '../Components/Footer'
 
 function ServicesPages() {
   return (
-    <div>ServicesPages</div>
+    <div>
+      <NavBar/>
+      <Service/>
+      <Footer/>
+    </div>
   )
 }
 

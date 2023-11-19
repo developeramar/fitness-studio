@@ -1,4 +1,4 @@
-// SchdulesPage.js
+
 import React, { useState } from "react";
 import NavBar from "../Components/NavBar";
 import NewAppointmentForm from "../Components/NewAppointmentForm";
@@ -29,56 +29,22 @@ const SchdulesPage = () => {
   const [clients, setClients] = useState([
     {
       id: 1,
-      firstName: "John",
-      lastName: "Doe",
-      address: "New York",
+      firstName: "Dummy",
+      lastName: "Dummy",
+      address: "Dummy",
       appointmentTime: new Date("2023-11-15T10:00:00"),
     },
     {
       id: 2,
-      firstName: "John",
-      lastName: "Abrahim",
-      address: "123 Main St, City A",
-      appointmentTime: new Date("2023-11-20T17:30:00"),
-    },
-    {
-      id: 3,
-      firstName: "Jane",
-      lastName: "Smith",
-      address: "456 Oak St, City B",
-      appointmentTime: new Date("2023-11-21T14:00:00"),
-    },
-    {
-      id: 4,
-      firstName: "Arun kumar",
-      lastName: "Nirala",
-      address: "chennai",
+      firstName: "Dummy",
+      lastName: "Dummy",
+      address: "Dummy",
       appointmentTime: new Date("2023-11-15T10:00:00"),
     },
-    {
-      id: 5,
-      firstName: "Rahuveer",
-      lastName: "Yadav",
-      address: "Chnadigarh",
-      appointmentTime: new Date("2023-11-20T17:30:00"),
-    },
-    {
-      id: 6,
-      firstName: "Amar",
-      lastName: "Chaudhari",
-      address: "Belhari-802326",
-      appointmentTime: new Date("2023-11-21T14:00:00"),
-    },
+   
   ]);
 
-  // Function to handle edit
-  const handleEdit = (clientId, updatedData) => {
-    setClients((prevClients) =>
-      prevClients.map((client) =>
-        client.id === clientId ? { ...client, ...updatedData } : client
-      )
-    );
-  };
+
 
   // Function to handle delete
   const handleDelete = (clientId) => {
@@ -130,7 +96,7 @@ const SchdulesPage = () => {
         {showSchedul && (
           <BookedSchedule
             clients={clients}
-            onEdit={handleEdit}
+            
             onDelete={handleDelete}
           />
         )}

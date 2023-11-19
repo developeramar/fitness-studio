@@ -1,4 +1,4 @@
-// NewAppointmentForm.js
+
 import React, { useState } from 'react';
 
 const NewAppointmentForm = ({ onAddAppointment }) => {
@@ -50,7 +50,7 @@ const NewAppointmentForm = ({ onAddAppointment }) => {
           className="p-2 border rounded w-full"
         />
       </div>
-      {/* DateTime Picker */}
+      
       <div className="mb-4">
         <label className="block mb-2 text-sm font-medium text-gray-200">Select Date and Time:</label>
         <input
