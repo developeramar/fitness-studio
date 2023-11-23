@@ -21,7 +21,7 @@ const NavBar = () => {
             alt=""
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            {/* Your site name or title */}
+            {"Nirala-Fitness-Center"}
           </span>
         </Link>
         <button
