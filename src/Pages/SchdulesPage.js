@@ -29,13 +29,16 @@ const SchdulesPage = () => {
   const [clients, setClients] = useState([
     {
       id: 1,
+
       firstName: "Dummy",
       lastName: "Dummy",
       address: "Dummy",
+
       appointmentTime: new Date("2023-11-15T10:00:00"),
     },
     {
       id: 2,
+
       firstName: "Dummy",
       lastName: "Dummy",
       address: "Dummy",
@@ -43,6 +46,7 @@ const SchdulesPage = () => {
     },
    
   ]);
+
 
 
 
@@ -96,7 +100,7 @@ const SchdulesPage = () => {
         {showSchedul && (
           <BookedSchedule
             clients={clients}
-            
+
             onDelete={handleDelete}
           />
         )}

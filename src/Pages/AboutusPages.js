@@ -1,4 +1,5 @@
 import React from 'react'
+
 import AboutUs from '../Components/AboutUs'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
@@ -13,6 +14,7 @@ function AboutusPages() {
       
      
     </div>
+
   )
 }
 

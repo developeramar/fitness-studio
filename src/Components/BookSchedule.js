@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const BookedSchedule = ({ clients, onEdit, onDelete }) => {
@@ -10,6 +11,8 @@ const BookedSchedule = ({ clients, onEdit, onDelete }) => {
   const handleContentEditable = (index) => {
     setEditableRowIndex(index);
   };
+
+
 
   return (
     <div className="text-left mt-8 overflow-x-auto max-w-screen-md mx-auto">
@@ -27,6 +30,7 @@ const BookedSchedule = ({ clients, onEdit, onDelete }) => {
           </thead>
           <tbody>
             {clients.map((client, index) => (
+
               <tr
                 key={client.id}
                 className={`${index % 2 === 0 ? 'bg-gray-200' : 'bg-white'} ${
@@ -66,6 +70,7 @@ const BookedSchedule = ({ clients, onEdit, onDelete }) => {
                     className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mx-2"
                   >
                     {editableRowIndex === index ? 'Save' : 'Edit'}
+
                   </button>
                   <button
                     onClick={() => onDelete(client.id)}
@@ -84,3 +89,5 @@ const BookedSchedule = ({ clients, onEdit, onDelete }) => {
 };
 
 export default BookedSchedule;
+
+
