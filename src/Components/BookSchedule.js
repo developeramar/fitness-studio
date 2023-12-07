@@ -16,12 +16,12 @@ const BookedSchedule = ({ clients, onEdit, onDelete }) => {
 
   return (
     <div className="text-left mt-8 overflow-x-auto max-w-screen-md mx-auto">
-      <h2 className="text-2xl font-bold mb-4 text-white">Booked Schedule</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white"> Booked Schedule </h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border border-gray-300 rounded">
           <thead>
             <tr>
-              <th className="p-2 border bg-gray-800 text-white">First Name</th>
+              <th className="p-2 border bg-gray-800 text-white">First Name </th>
               <th className="p-2 border bg-gray-800 text-white">Last Name</th>
               <th className="p-2 border bg-gray-800 text-white">Address</th>
               <th className="p-2 border bg-gray-800 text-white">Appointment Time</th>

@@ -42,11 +42,11 @@ const services = [
 ];
 
 const Service = () => (
-  <div className="container mx-auto my-8 px-4 md:px-0">
+  <div className="container mx-auto my-8 px-4 md:px-0 " >
     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Our Services</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 m-16  hover:cursor-pointer">
       {services.map((service) => (
-        <div key={service.id} className="bg-white p-4 rounded-md shadow-md">
+        <div key={service.id} className="bg-white p-4 rounded-md shadow-md  ">
           <img src={service.url} alt={service.title} className="w-16 h-16 mx-auto mb-4" />
           <h2 className="text-lg font-bold mb-2">{service.title}</h2>
           <p className="text-sm">{service.description}</p>

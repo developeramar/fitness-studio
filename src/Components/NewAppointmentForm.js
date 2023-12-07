@@ -31,7 +31,7 @@ const NewAppointmentForm = ({ onAddAppointment }) => {
     <div className="text-left mt-4 p-4 bg-purple-900 shadow-md rounded-md max-w-screen-md mx-auto">
       <h2 className="text-xl font-bold mb-4 text-white">Add New Appointment</h2>
       <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-200">First Name:</label>
+        <label className="block mb-2 text-sm font-medium text-gray-200">First Name :</label>
         <input
           type="text"
           value={firstName}
@@ -41,7 +41,7 @@ const NewAppointmentForm = ({ onAddAppointment }) => {
         />
       </div>
       <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-200">Last Name:</label>
+        <label className="block mb-2 text-sm font-medium text-gray-200">Last Name :</label>
         <input
           type="text"
           placeholder="Client's Last Name"
@@ -52,7 +52,7 @@ const NewAppointmentForm = ({ onAddAppointment }) => {
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-200">Select Date and Time:</label>
+        <label className="block mb-2 text-sm font-medium text-gray-200">Select Date and Time :</label>
         <input
           type="datetime-local"
           value={dateTime}
@@ -61,7 +61,7 @@ const NewAppointmentForm = ({ onAddAppointment }) => {
         />
       </div>
       <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-200">Address:</label>
+        <label className="block mb-2 text-sm font-medium text-gray-200">Address :</label>
         <input
           type="text"
           placeholder="Client's Address"
@@ -74,7 +74,7 @@ const NewAppointmentForm = ({ onAddAppointment }) => {
         onClick={handleAddAppointment}
         className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 w-full"
       >
-        Add
+        Book Appointment
       </button>
     </div>
   );

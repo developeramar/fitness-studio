@@ -9,9 +9,6 @@ const CalendarPage = ({ appointment }) => {
     setSelectedDate(date);
   };
 
-
-  
-
   const getappointmentsForDate = (date) => {
     const filteredAppointments = appointment ? appointment.filter((appointment) => {
       const appointmentDate = new Date(appointment.dateTime);
@@ -21,7 +18,6 @@ const CalendarPage = ({ appointment }) => {
         appointmentDate.getFullYear() === date.getFullYear()
       );
     }) : [];
-  
     return filteredAppointments;
   };
   
@@ -31,7 +27,7 @@ const CalendarPage = ({ appointment }) => {
 
     return (
       <div>
-        <h2 className="text-xl font-bold mb-4">Appointments for {dateKey}</h2>
+        <h2 className="text-xl font-bold mb-4">Appointments Date : {dateKey}</h2>
         <ul className="list-disc pl-4">
           {dateAppointments.map((appointment, index) => (
             <li key={index} className="mb-2">{`${appointment.firstName} ${appointment.lastName}`}</li>
@@ -54,7 +50,6 @@ const CalendarPage = ({ appointment }) => {
         </div>
       </div>
     </div>
-
     </div>
    
   );

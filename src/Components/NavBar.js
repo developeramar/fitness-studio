@@ -1,28 +1,26 @@
 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Image from '../Images/newimage.png';
 
 const NavBar = () => {
   const [flag, setFlag] = useState("hidden");
-
-  const menuOptionClass =
-    "block py-2 pl-3 pr-4 text-white bg-blue-700 hover:text-blue-200 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent ";
 
   const signInButtonClass =
     "md:w-auto md:ml-auto focus:outline-none";
 
   return (
-    <nav className="border-gray-200 bg-gray-900 dark:border-gray-700 ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="border-gray-200 bg-gray-900 dark:border-gray-700 "> 
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <Link to="/" className="flex items-center">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/iplteaminfowebapp.appspot.com/o/logo-removebg-preview.png?alt=media&token=b696dca4-f219-4372-bcc4-d360a1e4c239"
+            src={Image}
             width={80}
             height={80}
             alt=""
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-            {"Nirala-Fitness-Center"}
+            {"WellnessWorks"}
           </span>
         </Link>
         <button
@@ -58,10 +56,10 @@ const NavBar = () => {
           } w-full md:flex md:w-auto`}
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col gap-3 font-medium p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  md:bg-gray-900 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col gap-3 font-medium p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  md:bg-gray-900 md:dark:bg-gray-900 dark:border-gray-700 ">
             <li>
               <Link to="/">
-                <li className={menuOptionClass} aria-current="page">
+                <li className="p-2 hover:border-b-2 border-blue-800 transition duration-100 ease-in-out text-white" aria-current="page">
                   Home
                 </li>
               </Link>
@@ -69,7 +67,7 @@ const NavBar = () => {
 
             <li>
               <Link to="/schedules">
-                <li className={menuOptionClass} aria-current="page">
+                <li className="p-2 hover:border-b-2 border-blue-800 transition duration-100 ease-in-out text-white"  aria-current="page">
                   Schedules
                 </li>
               </Link>
@@ -77,14 +75,14 @@ const NavBar = () => {
 
             <li>
               <Link to="/services">
-                <li className={menuOptionClass} aria-current="page">
+                <li className="p-2 hover:border-b-2 border-blue-800 transition duration-300 ease-in-out text-white"  aria-current="page">
                   Services
                 </li>
               </Link>
             </li>
             <li>
               <Link to="/About">
-                <li className={menuOptionClass} aria-current="page">
+                <li className="p-2 hover:border-b-2 border-blue-800 transition duration-300 ease-in-out text-white"  aria-current="page">
                   About us
                 </li>
               </Link>
@@ -92,8 +90,8 @@ const NavBar = () => {
 
             <li className={signInButtonClass}>
               <Link to="/signin">
-                <li className={menuOptionClass} aria-current="page">
-                  <button>SignIn</button>
+                <li className="p-2 hover:border-b-2 border-blue-800 transition duration-300 ease-in-out text-white"  aria-current="page">
+                  <button>Sign in</button>
                 </li>
               </Link>
             </li>

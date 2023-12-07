@@ -30,20 +30,13 @@ const SchdulesPage = () => {
     {
       id: 1,
 
-      firstName: "Dummy",
-      lastName: "Dummy",
-      address: "Dummy",
+      firstName: "Jone",
+      lastName: "Doe",
+      address: "xyz",
 
       appointmentTime: new Date("2023-11-15T10:00:00"),
     },
-    {
-      id: 2,
-
-      firstName: "Dummy",
-      lastName: "Dummy",
-      address: "Dummy",
-      appointmentTime: new Date("2023-11-15T10:00:00"),
-    },
+  //
    
   ]);
 
@@ -77,24 +70,24 @@ const SchdulesPage = () => {
       </div>
 
       <div className=" md:py-12">
-        <div className="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-3 py-7">
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-3 py-7 ">
           <button
-            className="rounded-md hover:bg-violet-400 text-white px-[5px] py-[10px] bg-violet-600"
+            className="rounded-md hover:bg-violet-800 text-white px-[5px] py-[12px] bg-violet-600"
             onClick={handleshowSchedule}
           >
             Booked Appointments
           </button>
           <button
-            className="rounded-md hover:bg-violet-400 text-white px-[5px] py-[10px] bg-violet-600"
+            className="rounded-md hover:bg-violet-800 text-white px-[5px] py-[12px] bg-violet-600"
             onClick={handleshowAppointment}
           >
             Add New Appointments
           </button>
           <button
-            className="rounded-md hover:bg-violet-400 text-white px-[5px] py-[10px] bg-violet-600"
+            className="rounded-md hover:bg-violet-800 text-white px-[5px] py-[12px] bg-violet-600"
             onClick={handleshowcalendar}
           >
-            Appointments On Calendar
+            Appointments on Calendar
           </button>
         </div>
         {showSchedul && (
