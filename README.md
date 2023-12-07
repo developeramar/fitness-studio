@@ -49,7 +49,6 @@ NPM or Yarn
 Installation
 Clone the repository:
 
-git clone:  
 
 Navigate to the project directory:
 bash
